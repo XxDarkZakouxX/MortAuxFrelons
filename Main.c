@@ -21,3 +21,6 @@ void loop() {
 void lectureTemperature() {
   // Ici j'ajouterai le code spécifique quand j'aurai la référence
 }
+
+
+dqzdq
