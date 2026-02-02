@@ -1,0 +1,26 @@
+/*
+ */
+#define Ledoutpin 2
+void setup() {
+    pinMode(Ledoutpin,OUTPUT);
+    pinMode(3,OUTPUT);
+    pinMode(4,OUTPUT);  
+}
+
+void loop() {
+  digitalWrite(Ledoutpin, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+
+  // Attendre 1 seconde, pendant ce temps le processeur ne fait rien
+  // et la LED reste donc allumee
+  delay(1);
+  
+  // Passer le sortie de l'Arduino à l'état BAS pour eteindre la LED
+  digitalWrite(Ledoutpin, LOW);   
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  // Attendre 1 seconde, pendant ce temps le processeur ne fait rien
+  // et la LED reste donc éteinte
+  delay(1);
+}
